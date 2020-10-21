@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+<title>Home | Peers Nation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Exo;
+  margin: 0;
+  text-align: center;
+  background-image: url("https://lh3.googleusercontent.com/proxy/BZMLqFwOVFd7bRvGoPc5Yk5aKuyvewlyfN3LELtfzGwniFSAs4Dm1nuNXEiARPEeaT-nILVg7VF_nl0WiSrtvaFG74b-AwBQVdVWfCtto1gfNG6etgBp7NYR4X8paVn_ImKK");
+  color: white;
+}
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+.button {
+  background-color: white;
+  border: 2px, blue;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+.pill-nav a {
+  display: inline-block;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.pill-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.pill-nav a.active {
+  background-color: white;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-image: url("https://image.freepik.com/free-vector/abstract-background-fluid-design_23-2148569527.jpg");
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: black;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.gaming {
+  background-image: url("https://ak.picdn.net/shutterstock/videos/25046078/thumb/1.jpg");
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-image: url("https://lh3.googleusercontent.com/proxy/BZMLqFwOVFd7bRvGoPc5Yk5aKuyvewlyfN3LELtfzGwniFSAs4Dm1nuNXEiARPEeaT-nILVg7VF_nl0WiSrtvaFG74b-AwBQVdVWfCtto1gfNG6etgBp7NYR4X8paVn_ImKK");
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Peers Nation</h1>
+  <p>A website for <b>the students</b>, by <b>the students!</b></p>
+</div>
+
+<div class="pill-nav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Useful Links</h2>
+    <h3>Khan Academy</h3>
+    <p><b>Learn for free about math, art, computer programming, economics, physics, chemistry, biology, medicine, finance, history, and more.</b></p>
+    <a href="https://khanacademy.org" class="button">Get Me There!</a>
+    <hr class="solid">
+    <h3>W3SCHOOLS</h3>
+    <p><b>A W3Schools is an educational website for learning web technologies online. Content includes tutorials and references relating to HTML, CSS, JavaScript, JSON, PHP, Python, AngularJS, React.js, SQL, Bootstrap, Sass, Node.js, jQuery, XQuery, AJAX, XML, Raspberry Pi, C++, C# and Java.</b></p>
+    <a href="https://w3schools.com" class="button">Get Me There!</a>
+    <hr class="solid">
+    <h2>Browse By Categories</h2>
+    <div class="gaming" style="height:60px;">Gaming</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>TRY OUT OUR NEW CALCULATOR!</h2>
+    <h5>We've designed a calculator, Oct 21, 2020</h5>
+    <a href="default.asp">
+<img src="https://image.shutterstock.com/image-illustration/icon-blue-violet-neon-calculator-260nw-1354258814.jpg" alt="Calculator">
+</a>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Built by the students of Vikaasa School, Madurai</h2>
+  <h4>Website hosted on GitHub</h4>
+</div>
+
+</body>
+</html>
